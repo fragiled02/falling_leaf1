@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animasi Daun Juatoh</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            background-color: #f0f8ff;
+        }
+
+        .godong {
+            position: absolute;
+            top: 0px;
+            left: 50vw;
+            transform: translateX(-50%);
+            width: 100px;
+            animation: jatuh 17s ease-in-out infinite;
+        }
+
+        @keyframes jatuh {
+            0% {
+                transform: translateX(-50%) rotate(80deg);  
+                left: 40vw;
+                top: 0px;
+            }
+            25% {
+                transform: translateX(-60%) rotate(25deg);
+                left: 60vw;
+                top: 25%;
+            }
+            50% {
+                transform: translateX(-40%) rotate(80deg);
+                left: 40vw;
+                top: 50%;
+            }
+            75% {
+                transform: translateX(-50%) rotate(25deg);
+                left: 60vw;
+                top: 75%;
+            }
+            100% {
+                transform: translateX(-50%) rotate(80deg);
+                left: 40vw;
+                top: 100vh;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div><img src="https://pics.clipartpng.com/midle/Leaf_PNG_Clip_Art-1968.png" class="godong"></div>
+</body>
+</html>
